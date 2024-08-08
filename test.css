@@ -1,0 +1,243 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* max-width: 1200px; */
+
+}
+body {
+    max-width: 100vw;
+     min-height: 100vh;
+
+}
+ul {
+    list-style: none;
+}
+
+.main {
+     /* width: 100vw; */
+     max-width: 100vw;
+     min-height: 100vh;
+     /* background-color: aqua; */
+     display: flex;
+     flex-direction: column;
+
+}
+nav {
+    width: 100%;
+}
+
+
+header {
+    /* border: 4px solid red; */
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.headlist ul {
+    display: flex;
+    gap: 30px;
+    font-weight: bolder;
+    /* margin-right: 60px; */
+    /* margin-top: 10px; */
+}
+.headlist img {
+    display: none;
+}
+
+.profile {
+    /* border: 2px dashed green; */
+    display: flex;
+    width: 100%;
+    padding: 40px 40px;
+    /* height: 250px; */
+    justify-content: space-around;
+    position: relative;
+    /* align-items: center; */
+}
+.profile .topprofile {
+    /* background-color: greenyellow; */
+    width: 800px;
+    margin-top: 20px;
+    display: flex;
+    /* flex-direction: column; */
+    
+}
+.topprofile img{
+    height: 200px;
+    width: 300px;
+
+}
+/* .profile img {
+    padding: 20px;
+} */
+.profile .infoprofile {
+    /* background-color: red; */
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.profile .infoprofile p{
+    padding-right: 60px;
+}
+.infoprofile button {
+    background-color: #FF6464;
+    padding: 10px;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 3px 10px 5px 0px rgba(0,0,0,0.20);
+    align-self: center;
+}
+
+.recentpost {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    background-color: #EDF7FA;
+    /* min-height: 200px; */
+    align-items: center;
+    /* align-content: center; */
+    /* justify-content: center; */
+    padding: 40px;
+}
+.recentpost .recentmid {
+    display: flex;
+    justify-content: space-between;
+    /* background-color: violet; */
+    height: 30px;
+    width :53%;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-weight: bolder;
+}
+.recentmid a {
+    text-decoration: none;
+    color: black;
+}
+.contentbox {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.recenttext {
+    /* background-color: blue; */
+    width: 400px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #FFFFFF;
+    
+}
+
+
+
+.recentright {
+    /* background-color: blueviolet; */
+    width: 200px;
+}
+.lowercontent {
+    /* background-color: salmon; */
+    height: 100%;
+}
+.lowerhead h4{ 
+    padding: 20px;
+    font-size: 24px;
+
+}
+.lower1 {display: flex;
+    border-bottom: 1px solid;
+    margin-bottom: 5px;
+    padding: 10px;
+}
+.lower1 img {
+    border-radius: 10px;
+}
+.lowerin1 {
+    display: flex;
+    flex-direction: column;
+    /* background-color: blueviolet; */
+    gap: 10px;
+    padding: 15px;
+
+}
+
+.lowerin2 span {
+    margin: 10px; 
+}
+
+.buttom {
+    border: 1px none;
+    border-radius: 50px;
+    padding: 5px 10px;
+    background-color: #142850;
+    font-weight: bolder;
+    color: white;
+}
+footer {
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.Dash {
+    color: rgba(255, 254, 254, 0.575);
+}
+
+.link {
+    display: flex;
+    height: 50px;
+    gap: 20px;
+}
+.link a img {
+    height: 100%;
+}
+.under p {
+    margin-top: 10px;
+    font-weight: bolder;
+}
+
+@media (max-width:800px){
+    
+    .headlist ul {display: none;
+            }
+    .headlist .hamberger {display: inline-block;}
+
+    .topprofile {flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+justify-content: center;}
+
+    .profilecontent {
+        justify-content: center;
+        align-items: center;
+    }
+    .infoprofile {
+        display: flex;
+        width: 100%;
+        justify-content: center;}
+        .profile .infoprofile p{
+            padding-right: 0;
+        }
+        .contentbox {
+            flex-direction: column;
+            align-items: center;
+        }
+        .lower1 {
+            flex-direction: column;
+        }
+}
+   
+
